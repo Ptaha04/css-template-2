@@ -1,4 +1,6 @@
-:root {
+/*                                  Урок №3 Селектори Частина 1 */
+
+/* :root {
   background: purple;
 }
 
@@ -21,7 +23,7 @@ h1 {
 }
 
 /* клас */
-.box {
+/* .box {
   background: #cfcfcf;
 }
 
@@ -31,12 +33,12 @@ h1 {
 }
 
 /* id */
-#box > p {
+/* #box > p {
   color: paleturquoise;
 }
 
 /* клас */
-.user-last {
+/* .user-last {
   color: palevioletred;
 }
 
@@ -44,50 +46,162 @@ h1,
 h2#user,
 button {
   color: green;
-}
+} */
 
 /* клас */
-.button {
+/* .button {
   background: red;
   color: black;
 }
 button.button {
   background: violet;
   color: black;
-}
+} */
 
 /* div  має в середині тег <p> - дщчірній тег  */
-div > p {
+/* div > p {
   color: palegoldenrod;
 }
 
 footer > h1 {
   color: greenyellow;
-}
+} */
 
 /* тег <em> нащадок */
-footer em {
+/* footer em {
   color: rgb(14, 83, 34);
 }
 
 footer .child {
   color: rgb(117, 17, 117);
-}
+} */
 
 /* всі класи child в середині тегу <em> та <div> в footer будуть мати такий колір*/
-footer em.child,
+/* footer em.child,
 footer div.child {
   color: rgb(192, 21, 35);
 }
 
-/* сестринський селектор */
-h1 + p {
+      /* сестринський селектор */
+/* h1 + p {
   background: orange;
-}
+} */
 
 /* сусідський селектор */
-h1 ~ p,
+/* h1 ~ p,
 h1 ~ div > p,
 h1 ~ * > p {
   background: brown;
+} */
+
+/*                                    Урок №4 Селектори Частина 2 */
+
+/* .card-dark {
+  background: #ededed;
+}
+
+.item {
+  color: green;
+}
+
+.item:first-child {
+  color: blue;
+}
+
+.item:last-child {
+  color: blue;
+}
+
+.item:only-child {
+  color: red;
+}
+
+p:first-of-type {
+  color: yellowgreen;
+}
+
+b:last-of-type {
+  color: yellow;
+}
+
+.item:last-of-type {
+  color: red;
+}
+
+.item:only-of-type {
+  color: brown;
+}
+
+.item:nth-child(3) {
+  color: red;
+}
+
+p:not(.item) {
+  color: aqua;
+}
+
+p:empty {
+  height: 10px;
+  background: red;
+} */
+
+/*                                  Урок №5 Селектори Частина 3 */
+
+.card-dark {
+  background: #ededed;
+}
+
+.input-dark {
+  background: #979797;
+}
+
+.input-dark[required] {
+  background: red;
+}
+
+.input-dark[type='number'] {
+  background: rgb(27, 199, 133);
+}
+
+.small-img[alt~='small'] {
+  height: 150px;
+}
+
+a[rel='external'] {
+  color: green;
+}
+
+button[class|='btn'] {
+  background: red;
+}
+
+a[class^='btn'] {
+  background: peru;
+}
+
+a[class*='btn'] {
+  background: rgb(46, 158, 71);
+}
+
+.btn::first-letter {
+  color: rgb(209, 198, 45);
+}
+
+.big-text::first-line {
+  color: blue;
+}
+
+.input-dark::placeholder {
+  color: rgb(209, 45, 45);
+  background: yellow;
+}
+
+.big-text::before {
+  content: '$$$';
+  color: green;
+}
+
+.big-text::after {
+  content: '%%%%%';
+  color: green;
 }
