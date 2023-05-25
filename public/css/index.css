@@ -2,28 +2,28 @@
 
 /* :root {
   background: purple;
-}
+} */
 
 html {
   max-width: 720px;
 
-  background: blue;
+  /* background: blue; */
 }
 
 body {
   background: #fff;
 }
 
-* {
+/* * {
   color: red;
-}
+} */
 
 h1 {
   color: green;
 }
 
 /* клас */
-/* .box {
+.box {
   background: #cfcfcf;
 }
 
@@ -33,12 +33,12 @@ h1 {
 }
 
 /* id */
-/* #box > p {
+#box > p {
   color: paleturquoise;
 }
 
 /* клас */
-/* .user-last {
+.user-last {
   color: palevioletred;
 }
 
@@ -46,57 +46,57 @@ h1,
 h2#user,
 button {
   color: green;
-} */
+}
 
 /* клас */
-/* .button {
+.button {
   background: red;
   color: black;
 }
 button.button {
   background: violet;
   color: black;
-} */
+}
 
 /* div  має в середині тег <p> - дщчірній тег  */
-/* div > p {
+div > p {
   color: palegoldenrod;
 }
 
 footer > h1 {
   color: greenyellow;
-} */
+}
 
 /* тег <em> нащадок */
-/* footer em {
+footer em {
   color: rgb(14, 83, 34);
 }
 
 footer .child {
   color: rgb(117, 17, 117);
-} */
+}
 
 /* всі класи child в середині тегу <em> та <div> в footer будуть мати такий колір*/
-/* footer em.child,
+footer em.child,
 footer div.child {
   color: rgb(192, 21, 35);
 }
 
-      /* сестринський селектор */
-/* h1 + p {
+/* сестринський селектор */
+h1 + p {
   background: orange;
-} */
+}
 
 /* сусідський селектор */
-/* h1 ~ p,
+h1 ~ p,
 h1 ~ div > p,
 h1 ~ * > p {
   background: brown;
-} */
+}
 
 /*                                    Урок №4 Селектори Частина 2 */
 
-/* .card-dark {
+.card-dark {
   background: #ededed;
 }
 
@@ -143,7 +143,7 @@ p:not(.item) {
 p:empty {
   height: 10px;
   background: red;
-} */
+}
 
 /*                                  Урок №5 Селектори Частина 3 */
 
@@ -204,4 +204,102 @@ a[class*='btn'] {
 .big-text::after {
   content: '%%%%%';
   color: green;
+}
+
+/*                                  Урок №5 Селектори Частина 5 */
+
+#test:target {
+  color: red;
+}
+
+.link:link {
+  color: red;
+}
+
+.link:hover {
+  color: green;
+}
+
+.card:hover {
+  background: yellow;
+}
+
+.link:active {
+  color: purple;
+}
+
+.card:active {
+  background-color: purple;
+}
+
+input {
+  background-color: gray;
+}
+
+input:focus {
+  background-color: pink;
+}
+
+.card:focus-within {
+  background: red;
+}
+
+.card:lang(en) > span::after {
+  content: ' (en)';
+}
+
+button {
+  background-color: greenyellow;
+}
+
+button:enabled {
+  background-color: #16c100;
+}
+
+button:disabled {
+  background-color: aqua;
+}
+
+.inp:read-write {
+  background-color: blue;
+}
+
+.inp:read-only {
+  background-color: red;
+}
+
+input[type='checkbox']:checked ~ span {
+  background: red;
+}
+
+.valid:valid {
+  background: yellow;
+}
+
+.valid:invalid {
+  background: rgb(20, 216, 223);
+}
+
+.valid:optional {
+  background: rgb(191, 240, 58);
+}
+
+.number:focus {
+  background: gray;
+}
+
+.number:out-of-range {
+  background: red;
+}
+
+.number:in-range {
+  background: green;
+}
+
+.number:invalid {
+  background: yellow;
+}
+
+input:placeholder-shown ~ span {
+  background: pink;
 }
