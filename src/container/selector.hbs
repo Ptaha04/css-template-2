@@ -1,0 +1,217 @@
+{{! 								Урок №3 селектори частина 1 }}
+
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+
+{{! <style>
+  h1 { color: black; }
+</style> }}
+
+{{! <section class='p-5 box'>
+  <h1 style='color: yellow'>USB хаб Type C 12 в 1 HDMI VGA
+    AUX 3.5 mm</h1>
+  <h2>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h2>
+  <h1 id='user'>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+
+  <button
+    type='button'
+    class='btn btn-primary'
+  >Купити</button>
+
+  <button
+    type='button'
+    class='btn btn-primary'
+  >Купити</button>
+
+  <button type='button' class='button'>Купити</button>
+
+  <p class='user'>Link</p>
+
+</section>
+
+<section>
+  <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+  <p class='user'>Link</p>
+  <strong>Strong</strong>
+  <em>EMEMEM</em>
+  <div>
+    <p>Link</p>
+  </div>
+
+</section>
+
+<footer class='p-5 box'>
+  <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+  <p class='user user-last'>Link</p>
+
+  <p class='user'>
+    <em>Test EM</em>
+  </p>
+
+  <div>
+    <div>
+      <em>Test EM</em>
+    </div>
+  </div>
+
+  <em class='child'>TEST EM</em>
+  <div class='child'>TEST DIV</div>
+
+</footer> }}
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}
+
+{{! 											Урок №4 Селектори частина 2 }}
+
+{{! <div class='card p-1 m-2 card-dark'>
+  <ul>
+    <li class='item'>1</li>
+    <li class='item'>2</li>
+    <li class='item'>3</li>
+    <li class='item'>4</li>
+  </ul>
+</div>
+
+<div class='card p-1 m-2 card-dark'>
+  <ul>
+    <li class='item'>1</li>
+
+  </ul>
+</div>
+
+<div class='card p-1 m-2 card-dark'>
+  <ul>
+    <b>First</b>
+    <p>First</p>
+    <p>Second</p>
+    <b>Second</b>
+
+  </ul>
+</div>
+
+<div class='card p-1 m-2 card-dark'>
+
+  <div class='item'>First</div>
+  <div class='item'>Second</div>
+  <div class='item'>Third</div>
+  <div class='item'>four</div>
+  <p class='item'>First</p>
+  <p class='item'>Second</p>
+  <p>NOT</p>
+  <p></p>
+  <strong class='item'>Test strong</strong>
+  <article class='item'>Test article</article>
+  <article class='item'>Test article</article>
+
+</div> }}
+
+{{!										   - Урок №5 Селектори Частина 3  }}
+
+{{! <div class='card p-2 m-3 card-dark'>
+  <input class='input-dark' required />
+  <input class='input-dark' />
+  <input class='input-dark' type='number' />
+</div>
+
+<div class='card p-2 m-3 card-dark'>
+  <img
+    alt='image small card 100px'
+    class='small-img'
+    src='https://picsum.photos/200/300'
+    height='100px'
+  />
+  <br />
+  <a
+    href='https://picsum.photos/200/300'
+    rel='external'
+  >Link</a>
+
+  <button class='btn'>Click me</button>
+  <br />
+  <a
+    class='btn btn-secondary'
+    href='https://picsum.photos/200/300'
+    rel='external'
+  >Don`t Click me</a>
+  <br />
+  <a
+    class='small btn-secondary'
+    href='https://picsum.photos/200/300'
+    rel='external'
+  >Don`t Click me</a>
+</div>
+
+<div class='card p-2 m-3 card-dark'>
+  <p class='big-text'>This is text about info big test info
+    This is text about info big test info This is text about
+    <br />
+    info big test info This is text about info big test info
+  </p>
+
+  <input
+    class='input-dark p-5'
+    placeholder='THIS IS TEXT'
+  />
+</div>
+
+<div class='card p-2 m-3 card-dark'>
+  <p class='big-text'>This is text about info big test info
+    This is text about info big test info This is text about
+    <br />
+    info big test info This is text about info big test info
+  </p>
+</div> }}
+
+<div lanf='fr' class='card p-2 m-3 card-dark'>
+  <a class='link' href='https://www.google.com/'>Click</a>
+</div>
+
+<div lang='en' id='test' class='card p-2 m-3 card-dark'>
+  <input />
+  <span>Hello world</span>
+</div>
+
+<div class='p-2 m-3 card-dark'>
+  <button>Test button</button>
+  <button disabled>Disabled button</button>
+</div>
+
+<div class='p-5 m-5 card-dark'>
+  <input class='inp' />
+  <input class='inp' readonly />
+
+  <div class='mt-5'>
+    <div>
+      <input type='checkbox' checked />
+      <span>First checkbox</span>
+    </div>
+    <div>
+      <input type='checkbox' />
+      <span>Second checkbox</span>
+    </div>
+  </div>
+</div>
+
+<div class='p-5 m-5 card-dark'>
+  <input type='email' required class='valid' />
+</div>
+
+<div class='p-5 m-5 card-dark'>
+  <input type='email' class='valid' placeholder='test' />
+  <span>Test text</span>
+</div>
+
+<div class='p-5 m-5 card-dark'>
+  <input
+    type='number'
+    min='10'
+    max='20'
+    required
+    class='number'
+  />
+</div>
