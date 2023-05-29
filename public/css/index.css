@@ -52,3 +52,16 @@
 .lts:hover {
   text-decoration: line-through dashed blue;
 }
+
+* {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  font-display: swap;
+}
+
+span {
+  font-size: larger;
+  font-weight: lighter;
+  font-style: italic;
+}
