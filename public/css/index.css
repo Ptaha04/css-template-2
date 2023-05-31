@@ -65,3 +65,18 @@ span {
   font-weight: lighter;
   font-style: italic;
 }
+
+.test {
+  display: none;
+}
+
+.block {
+  display: block;
+  background: rgb(219, 198, 198);
+  margin: auto;
+  /* width: fit-content; */
+  min-width: min-content;
+  max-width: 600px;
+  min-height: 100px;
+  max-height: max-content;
+}
