@@ -1,93 +1,82 @@
-:root {
-  background: purple;
+.first-card p {
+  color: 093196;
+  background: rgb(200, 240, 60);
 }
 
-html {
-  max-width: 720px;
-
-  background: blue;
+/* Додатково вказується прозорість від 0 до 1 */
+.first-card span {
+  background: rgba(230, 20, 5, 0.5);
 }
 
-body {
-  background: #fff;
+/* властивості працюють у вказаних браузерах */
+.second-card p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+}
+.second-card p:hover {
+  direction: rtl;
+}
+
+/* Властивості за замовченням */
+.third-card #test {
+  color: initial;
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke: initial;
+
+  writing-mode: vertical-rl;
+}
+
+.four-card p {
+  text-align: center;
+  /* text-align: justify; */
+
+  text-transform: lowercase;
+}
+
+.five-card pre {
+  /* tab-size: 20px; */
+  letter-spacing: 0.5em;
+  text-decoration: underline dotted red;
+}
+
+.tdl {
+  text-decoration-color: blue;
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+}
+
+.lts {
+  text-decoration: underline solid red;
+}
+.lts:hover {
+  text-decoration: line-through dashed blue;
 }
 
 * {
-  color: red;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  font-display: swap;
 }
 
-h1 {
-  color: green;
+span {
+  font-size: larger;
+  font-weight: lighter;
+  font-style: italic;
 }
 
-/* клас */
-.box {
-  background: #cfcfcf;
+.test {
+  display: none;
 }
 
-#user,
-.user {
-  color: blue;
-}
-
-/* id */
-#box > p {
-  color: paleturquoise;
-}
-
-/* клас */
-.user-last {
-  color: palevioletred;
-}
-
-h1,
-h2#user,
-button {
-  color: green;
-}
-
-/* клас */
-.button {
-  background: red;
-  color: black;
-}
-button.button {
-  background: violet;
-  color: black;
-}
-
-/* div  має в середині тег <p> - дщчірній тег  */
-div > p {
-  color: palegoldenrod;
-}
-
-footer > h1 {
-  color: greenyellow;
-}
-
-/* тег <em> нащадок */
-footer em {
-  color: rgb(14, 83, 34);
-}
-
-footer .child {
-  color: rgb(117, 17, 117);
-}
-
-/* всі класи child в середині тегу <em> та <div> в footer будуть мати такий колір*/
-footer em.child,
-footer div.child {
-  color: rgb(192, 21, 35);
-}
-
-/* сестринський селектор */
-h1 + p {
-  background: orange;
-}
-
-/* сусідський селектор */
-h1 ~ p,
-h1 ~ div > p,
-h1 ~ * > p {
-  background: brown;
+.block {
+  display: block;
+  background: rgb(219, 198, 198);
+  margin: auto;
+  /* width: fit-content; */
+  min-width: min-content;
+  max-width: 600px;
+  min-height: 100px;
+  max-height: max-content;
 }

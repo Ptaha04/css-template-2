@@ -1,65 +1,75 @@
-{{! 
-Це код container файлу для index сторінки, 
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
- }}
-
-{{! <style>
-  h1 { color: black; }
-</style> }}
-
-<section class='p-5 box'>
-  <h1 style='color: yellow'>USB хаб Type C 12 в 1 HDMI VGA
-    AUX 3.5 mm</h1>
-  <h2>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h2>
-  <h1 id='user'>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
-
-  <button
-    type='button'
-    class='btn btn-primary'
-  >Купити</button>
-
-  <button
-    type='button'
-    class='btn btn-primary'
-  >Купити</button>
-
-  <button type='button' class='button'>Купити</button>
-
-  <p class='user'>Link</p>
-
-</section>
-
-<section>
-  <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
-  <p class='user'>Link</p>
-  <strong>Strong</strong>
-  <em>EMEMEM</em>
-  <div>
-    <p>Link</p>
-  </div>
-
-</section>
-
-<footer class='p-5 box'>
-  <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
-  <p class='user user-last'>Link</p>
-
-  <p class='user'>
-    <em>Test EM</em>
-  </p>
-
-  <div>
-    <div>
-      <em>Test EM</em>
+<main class='m-5'>
+  <div class='first-card p-5'>
+    <div class='card p-5'>
+      <p>
+        Hello world!
+      </p>
+      <span>RGBA</span>
     </div>
   </div>
 
-  <em class='child'>TEST EM</em>
-  <div class='child'>TEST DIV</div>
+  <div class='second-card p-5'>
+    <div class='card p-5'>
+      <p>
+        Hello world!
+      </p>
+    </div>
+  </div>
 
-</footer>
+  <div class='third-card p-5'>
+    <div class='card p-5'>
+      <p id='test'>
+        Hello world!
+      </p>
+    </div>
+  </div>
 
-{{! 
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
-}}
+  <div class='four-card p-5'>
+    <div class='card p-5'>
+      <p>
+        Hello world!
+      </p>
+      <p>
+        JUSTIFY
+      </p>
+    </div>
+  </div>
+
+  <div class='five-card p-5'>
+    <div class='card p-5'>
+      <pre>Hello world! sdffd</pre>
+      <div>
+        <p class='tdl'>
+          Text Decoration Line
+        </p>
+      </div>
+
+      <div>
+        <p class='lts'>
+          Text Decoration Line
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <span class='test'>TEST</span>
+
+  <div>Block</div>
+  <div>Block</div>
+  <div>Block</div>
+  <div>Block</div>
+
+  <div
+    style='margin: 50px 0px 50px 100px; background: grey;'
+  >
+    <span>Inline</span>
+    <span>Inline</span>
+    <span>Inline</span>
+
+    <span class='block'>Inline-Block</span>
+  </div>
+
+  <div>Block</div>
+
+</main>
