@@ -192,3 +192,44 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+/* body {
+  background-image: radial-gradient(
+      26.77% 31.57% at 50% 50%,
+      rgba(139, 157, 223, 0.4) 0%,
+      rgba(255, 253, 253, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected;
+} */
+
+.page {
+  background-image: url(/img/test3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.hero_text {
+  /* background-image: url(/img/test2.jpg);
+  background-color: transparent; */
+  /* background-attachment: local;
+  height: 80px;
+  overflow: auto; */
+  /* border: 20px solid transparent; */
+  padding: 40px;
+  color: white;
+  /* background-clip: padding-box;
+  -webkit-background-clip: text; */
+  /* background-origin: border-box; */
+  border-image-source: url(/img/test2.jpg);
+  border-image-width: 10%;
+  border-image-slice: 10%;
+  /* border-image-repeat: round; */
+  border-image-outset: 10px;
+}
+
+/* body {
+  background-image: url(/img/test.png);
+  background-repeat: round;
+} */
