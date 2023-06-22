@@ -38,10 +38,47 @@
 			<p class="form_info">{{info}}</p>
 		</form>
 	{{/with}}
-	
 </main>
 
+<div class="updates">
+	{{#with updates}}
+		<div class="updates_title">{{title}}</div>
+		
+		<div class="updates_list">
+			{{#each list}}
+				<div class="list_item">
+					<div class="list_img" target="{{color}}">32x32</div>
+					<div class="list_text">
+						<div class="list_nickname">{{nickname}}</div>
+						<p class="list_description">{{description}}</p>
+					</div>
+					
+				</div>
+			{{/each}}
+		</div>
 
+		{{#with show_all}}
+			<a href="{{url}}" class="show_all_link">{{text}}</a>
+		{{/with}}
+	{{/with}}
+</div>
+
+<div class="expirience">
+	{{#with expirience}}
+		<h2 class="expirience_title">{{title}}</h2>
+
+		<div class="expirience_badge">{{badge}}</div>
+
+		<div class="expirience_list">
+			{{#each list}}
+				<div class="expirience_card">
+					<strong class="expirience_name">{{name}}</strong>
+					<p class="expirience_details">{{details}}</p>
+				</div>
+			{{/each}}
+		</div>
+	{{/with}}
+</div>
 
 <footer class="footer" id="test">
 	<div class="">

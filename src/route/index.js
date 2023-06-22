@@ -921,16 +921,19 @@ router.get('/template-6', function (req, res) {
       list: [
         {
           nickname: 'Techie',
+          color: 'blue',
           description:
             'The latest software update includes several new features and performance improvements, making it faster and easier to use...',
         },
         {
           nickname: 'Traveler',
+          color: 'red',
           description:
             "We've added new destinations to our travel packages, including exotic locations and off-the-beaten-path adventures...",
         },
         {
           nickname: 'Foodie',
+          color: 'purple',
           description:
             'Our new menu features a variety of delicious dishes inspired by cuisines from around the world, with options for every taste and dietary preference...',
         },
