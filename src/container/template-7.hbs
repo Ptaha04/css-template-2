@@ -1,77 +1,32 @@
-<header class='header'>
-	{{#with header}}
-		<div class="header_top">
-			<a href="#test">
-				{{> logoTemplate7}}
-			</a>
-			
-			{{!-- <nav> --}}
-				<div class="header_nav">
-					{{> nav list=links}}
-				</div>
-			{{!-- </nav> --}}
-		</div>
-		
-		<div class="header_bottom">
-			<div class="header_ad">Ad</div>
-			<div class="header_bot_line">
-				{{#with ad}}
-					<div class="ad_link">
-						<p class="ad_text">{{text}}:</p>
-						<a href="{{url}}" class="header_link">{{url}}</a>
-					</div>
-				{{/with}}
-				<div><p class="userOnline">Users online: {{userOnline}}</p></div>
-			</div>
-		</div>
-	{{/with}}
-</header>
+<div class='hero'>
+  {{#with hero}}
+    <h1 class='title'>{{title}}</h1>
+    <p class='description'>{{description}}</p>
+    {{#with button}}
+      <a
+        href='{{url}}'
+        class='button hero_button'
+      >{{text}}</a>
+    {{/with}}
+  {{/with}}
+</div>
 
-{{!-- <main class="main"> --}}
-	<div class="hero">
-		{{#with hero}}
-			<h1 class="title">{{title}}</h1>
-			<p class="description">{{description}}</p>
-			{{#with button}}
-				<a href="{{url}}" class="button hero_button">{{text}}</a>
-			{{/with}}
-		{{/with}}
-	</div>
+<div class='about'>
+  {{#with about}}
+    <h3 class='about_title'>{{heading}}</h3>
+    <p class='about_info'>{{info}}</p>
+  {{/with}}
+</div>
 
-	<div class="about">
-		{{#with about}}
-			<h3 class="about_title">{{heading}}</h3>
-			<p class="about_info">{{info}}</p>
-		{{/with}}
-	</div>
-
-	<div class="articles">
-		<div class="articles_top_line">
-			<div><h2 class="articles_title">Our Articles</h2></div>
-			<a href="{{url}}" class="button articles_button">View All</a>
-		</div>
-		<div class="articles_block">
-			{{#each articles}}
-				<div class="articles_card">
-					<div class="articles_photo" style='background-image: url({{photo}})'></div>
-					<h4 class="articles_name">{{name}}</h4>
-					<p class="articles_description">{{description}}</p>
-					<a href='#' class="button articles_card_button">Read All</a>
-				</div>
-			{{/each}}
-		</div>
-	</div>
-{{!-- </main> --}}
-
-<div class="footer">
-	{{#with footer}}
-		<div class="nav_footer">
-			{{#each pages}}
-				<a href="{{path}}" class="nav_link">{{name}}</a>
-			{{/each}}
-		</div>
-		<div><p class="footer_copyright">{{copyright}}</p></div>
-
-		
-	{{/with}}
+<div class='articles'>
+  <div class='articles_top_line'>
+    <div><h2 class='articles_title'>Our Articles</h2></div>
+    <a href='{{url}}' class='button articles_button'>View
+      All</a>
+  </div>
+  <div class='articles_block'>
+    {{#each articles}}
+		{{> articleCard}}
+	{{/each}}
+  </div>
 </div>

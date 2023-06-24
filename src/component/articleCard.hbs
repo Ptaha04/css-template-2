@@ -1,0 +1,12 @@
+<div class='articles_card'>
+  <div
+    class='articles_photo'
+    style='background-image: url({{photo}})'
+  ></div>
+  {{#if isNew}}
+    <div class='articles_badge'>NEW</div>
+  {{/if}}
+  <h4 class='articles_name'>{{name}}</h4>
+  <p class='articles_description'>{{description}}</p>
+  <a href='#' class='button articles_card_button'>Read All</a>
+</div>
