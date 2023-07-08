@@ -82,18 +82,6 @@
             <span class='text text--light'>Products</span>
           </a>
 
-          <div class='relative click'>
-            <div class='field field--select'>
-              <span class='text text--light'>Choose</span>
-            </div>
-            <select class='field__select'>
-              <option value='dog'>Dog</option>
-              <option value='cat'>Cat</option>
-              <option value='hamster'>Hamster</option>
-              <option value='parrot'>Parrot</option>
-              <option value='spider'>Spider</option>
-            </select>
-          </div>
         </nav>
       </aside>
       <header class='header'>
@@ -274,72 +262,93 @@
                 </div>
               </div>
 
-              <div class='payment__element'>
-                <div class='input__title'>Name on card</div>
-                <div class='input__title'>Credit card number</div>
-                <input
-                  class='input__field'
-                  type='text'
-                  name='name on card'
-                />
-                <input
-                  class='input__field'
-                  type='text'
-                  name='credit card number'
-                />
+              <div class='payment__line'>
+                <div class='payment__element'>
+                  <div class='input__title'>Name on card</div>
+                  <input
+                    class='input__field'
+                    type='text'
+                    name='name on card'
+                  />
+                </div>
+
+                <div class='payment__element'>
+
+                  <div class='input__title'>Credit card
+                    number</div>
+                  <input
+                    class='input__field'
+                    type='text'
+                    name='credit card number'
+                  />
+                </div>
               </div>
-              <div class='payment__element'>
-                <div class='input__title'>Expiration</div>
-                <div class='input__title'>CVV</div>
-                <input
-                  class='input__field'
-                  type='text'
-                  name='expiration'
-                />
-                <input
-                  class='input__field'
-                  type='text'
-                  name='cvv'
-                />
+
+              <div class='payment__line'>
+                <div class='payment__element'>
+                  <div class='input__title'>Expiration</div>
+                  <input
+                    class='input__field'
+                    type='text'
+                    name='expiration'
+                  />
+                </div>
+
+                <div class='payment__element'>
+                  <div class='input__title'>CVV</div>
+                  <input
+                    class='input__field'
+                    type='text'
+                    name='cvv'
+                  />
+                </div>
               </div>
 
               <div class='divider'></div>
 
-              <div class='payment__element'>
-                <div class='input__title'>Country</div>
-                <div class='input__title'>State</div>
-                <div class='relative click'>
-                  <div class='field field--select'>
-                    <span class='text'>Choose</span>
+              <div class='payment__line'>
+                <div class='payment__element'>
+                  <div class='input__title'>Country</div>
+                  <div class='relative click'>
+                    <div class='field field--select'>
+                      <span class='text'>Choose</span>
+                    </div>
+                    <select class='field__select'>
+                      <option value='dog'>Dog</option>
+                      <option value='cat'>Cat</option>
+                      <option
+                        value='hamster'
+                      >Hamster</option>
+                      <option value='parrot'>Parrot</option>
+                      <option value='spider'>Spider</option>
+                    </select>
+                    <span
+                      class='icon select__icon icon--button click'
+                      style='background-image: url(/svg/arrow.svg);'
+                    ></span>
                   </div>
-                  <select class='field__select'>
-                    <option value='dog'>Dog</option>
-                    <option value='cat'>Cat</option>
-                    <option value='hamster'>Hamster</option>
-                    <option value='parrot'>Parrot</option>
-                    <option value='spider'>Spider</option>
-                  </select>
-                  <span
-                    class='icon select__icon icon--button click'
-                    style='background-image: url(/svg/arrow.svg);'
-                  ></span>
                 </div>
 
-                <div class='relative click'>
-                  <div class='field field--select'>
-                    <span class='text'>Choose</span>
+                <div class='payment__element'>
+                  <div class='input__title'>State</div>
+                  <div class='relative click'>
+                    <div class='field field--select'>
+                      <span class='text'>Choose</span>
+                    </div>
+                    <select class='field__select'>
+                      <option value='dog'>Dog</option>
+                      <option value='cat'>Cat</option>
+                      <option
+                        value='hamster'
+                      >Hamster</option>
+                      <option value='parrot'>Parrot</option>
+                      <option value='spider'>Spider</option>
+                    </select>
+                    <span
+                      class='icon select__icon icon--button click'
+                      style='background-image: url(/svg/arrow.svg);'
+                    ></span>
                   </div>
-                  <select class='field__select'>
-                    <option value='dog'>Dog</option>
-                    <option value='cat'>Cat</option>
-                    <option value='hamster'>Hamster</option>
-                    <option value='parrot'>Parrot</option>
-                    <option value='spider'>Spider</option>
-                  </select>
-                  <span
-                    class='icon select__icon icon--button click'
-                    style='background-image: url(/svg/arrow.svg);'
-                  ></span>
                 </div>
               </div>
 
@@ -353,8 +362,7 @@
                   checkout</div>
               </a>
             </div>
-            {{! <div class="">text</div>
-				<div class="">text</div> }}
+
           </section>
         </div>
       </main>
